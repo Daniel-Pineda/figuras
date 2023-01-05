@@ -2,7 +2,7 @@ package figuras
 
 import "fmt"
 
-type Geometria interface {
+type geometria interface {
 	area() float32
 	perimetro() float32
 }
