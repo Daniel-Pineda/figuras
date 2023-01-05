@@ -1,0 +1,14 @@
+package figuras
+
+import "fmt"
+
+type Geometria interface {
+	area() float32
+	perimetro() float32
+}
+
+func Medidas(g Geometria) {
+	fmt.Println("Medidas: ", g)
+	fmt.Println("Area: ", g.area())
+	fmt.Println("Perimetro: ", g.perimetro())
+}
